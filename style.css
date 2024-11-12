@@ -1,0 +1,425 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part start  */
+
+/* nav style  */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(94, 94, 138);
+}
+
+.logo{
+    color: #fff;
+    margin-left: 30px;
+}
+.navigation > ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+.navigation > ul > li{
+    list-style: none;
+    padding: 20px 0px;
+
+}
+.navigation > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding: 20px 20px;
+    transition: 1s;
+    
+}
+
+.navigation > ul > li:first-child > a{
+    border-left: 1px solid #fff;
+}
+
+
+.navigation > ul > li > a:hover{
+    background-color: rgb(154, 154, 154);
+}
+
+/* dropdown start  */
+
+.dropdown-menu{
+    
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s;
+    transform: scale(0);
+    transform-origin: top;
+    box-shadow: 1px 10px 10px 0px rgb(84, 78, 70);
+    
+}
+
+.dropdown-menu > ul{
+    list-style: none;
+    display: block;
+    background-color: blue;
+    margin-top: 20px;
+    width: 205px;
+    text-align: center;
+    
+}
+.dropdown-menu > ul > li {
+    padding: 10px 0px;
+    border-bottom: 1px solid #fff;
+}
+.dropdown-menu > ul > li:first-child{
+    border-top: 1px solid #fff;
+}
+
+.dropdown-menu > ul > li:hover{
+    background-color: rgb(52, 96, 96);
+}
+
+.dropdown-menu > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+    
+}
+.dropdown-menu > ul > li > a:hover {
+    opacity: 1;
+}
+
+.navigation > ul > li:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+/* nav var css end  */
+
+/* header css start  */
+
+.main-header{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.307) , rgba(0, 0, 0, 0.701)), url(img/web\ header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-container{
+    padding-top: 150px;
+}
+
+.header-container > h4 {
+    font-size: 24px;
+}
+.header-container > h2{
+    background-color: rgba(26, 26, 60, 0.838);
+    width: 400px;
+    margin:30px auto;
+    font-size: 50px;
+    color: #fff;
+    border-radius: 15px;    
+    padding: 15px 0px;
+
+    
+}
+
+.header-container > p {
+    font-size: 20px;
+}
+
+.header-container > button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgba(26, 26, 60, 0.656);
+    border-radius: 20px 5px 20px 5px;
+    cursor: pointer;
+    
+}
+
+.header-container > button:hover{
+    background-color: rgba(26, 26, 60, 0.027);
+}
+
+.font-icone > a{
+    color: #fff;
+    padding: 0px 5px;
+}
+.font-icone > a > i {
+ 
+    font-size: 20px;
+    padding-top: 10px;
+    
+}
+
+/* main part css start  */
+
+/* 1st section  */
+
+.box_contain{
+    width: 1000px;
+    margin: auto;
+    padding: 100px 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.box-1{
+    width: 300px;
+    padding: 30px 5px;
+
+}
+
+.box-1> h2{
+    padding: 15px 0px ;
+}
+.box-1 > i{
+    font-size: 50px;
+}
+.box-1:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* 1st section end  */
+
+.titel{
+
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.titel > h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(66, 38, 93);
+    top: 70px;
+    left: 640px;
+}
+
+.smart-area{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.smart-area > img {
+    width: 40%;
+}
+
+.smart-text{
+    width: 50%;
+}
+.smart-text > h2{
+    color: cadetblue;
+}
+.smart-text > h3{
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.smart-text > p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.smart-text > button{
+    padding: 10px 20px ;
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.smart-text > button:hover{
+    background-color: rgba(137, 43, 226, 0.547);
+}
+/* 2nd section end  */
+
+/* 3rd section start  */
+
+.service-title{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.service-title > h6{
+    font-family: Tahoma;
+    font-size: 16px;
+    color: cadetblue;
+
+}
+
+.service-title > h2{
+    font-size: 40px;
+}
+
+.service-box{
+    display: flex;
+    width: 850px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.service-box-1{
+    width: 250px;
+    padding: 20px 10px;
+    background-color: rgba(95, 158, 160, 0.76);
+
+}
+
+.service-box-1:hover{
+    background-color: aquamarine;
+}
+
+.service-box-1 > i{
+    font-size: 40px;
+}
+.service-box-1 > h4{
+    padding: 10px 0px;
+}
+
+/* 3rd section end  */
+
+/* 4thh sectionn  css start  */
+
+.card-container{
+    background-color: #dbd1d175;
+    padding-bottom: 50px;
+}
+
+.course-titel{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+}
+
+.card-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.card-main{
+  
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.318);
+
+
+}
+
+.card-img{
+    text-align: center;
+    width: 300px;
+}
+
+.card-img > img {
+    width: 100%;
+}
+.card-text{
+    width: 300px;
+}
+
+.card-text > h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-text > p{
+    padding-bottom: 10px;
+}
+
+.card-price{
+    border-top: 1px dashed rgba(0, 0, 0, 0.467);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.467);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.card-link {
+    margin-bottom: 15px;
+}
+
+.card-link > button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    background-color: cadetblue;
+    border: none;
+    color: #fff;
+}
+
+.card-link > a{
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+.card-main:hover{
+background-color: #fff;
+}
+
+/* 4th section end  */
+
+
+/* footer section start  */
+
+.main-footer{
+    background-color: rgb(39, 39, 96);
+}
+.footer-parent{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+
+.f1 > p{
+    padding: 5px 0px;
+}
+
+.f2 > p{
+    padding: 5px 0px;
+}
+
+.f3 > p{
+    padding: 5px 0px;
+}
+
+.f4 > p{
+    padding: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
